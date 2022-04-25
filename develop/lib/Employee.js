@@ -1,18 +1,14 @@
 class Employee {
-    constructor(id, email, officenumber, github, school) {
+    constructor(name, id, email) {
+        this.name= name;
         this.id = id;
         this.email = email;
-        this.officenumber = officenumber;
-        this.github = github;
-        this.school = school;
     }
 
     printInfo() {
+        console.log(`name: ${this.name}`);
         console.log(`ID: ${this.id}`);
         console.log(`Email: ${this.email}`);
-        console.log(`Office number: ${this.officenumber}`);
-        console.log(`Github: ${this.github}`);
-        console.log(`School: ${this.school}`);
     }
 }
 

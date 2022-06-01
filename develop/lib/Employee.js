@@ -5,11 +5,21 @@ class Employee {
         this.email = email;
     }
 
-    printInfo() {
-        console.log(`name: ${this.name}`);
-        console.log(`ID: ${this.id}`);
-        console.log(`Email: ${this.email}`);
-    }
+    getName() {
+        return this.name;
+      }
+    
+      getId() {
+        return this.id;
+      }
+    
+      getEmail() {
+        return this.email;
+      }
+    
+      getRole() {
+        return "Employee";
+      }
 }
 
 module.exports = Employee;

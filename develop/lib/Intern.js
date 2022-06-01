@@ -6,13 +6,14 @@ class Intern extends Employee {
         this.school = school;
     }
 
-    role(){
-        console.log("Intern");
-    }
-
-    school(){
-        console.log(`${this.school}`);
-    }
+    getRole() {
+        return "Intern";
+      }
+    
+      getSchool() {
+        return this.school;
+      }
+        
 }
 
 module.exports = Intern;
